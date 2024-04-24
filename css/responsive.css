@@ -263,4 +263,7 @@
   .search_2:focus {
     border: 0.3rem solid var(--border-color);
   }
+  .home_img {
+    margin-top: 5rem;
+  }
 }

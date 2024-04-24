@@ -536,6 +536,7 @@ section.home {
   background-color: var(--b-green);
   letter-spacing: var(--letterSpacing-1);
 }
+
 .home_img img {
   width: 100%;
 }
