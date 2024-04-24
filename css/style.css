@@ -254,8 +254,8 @@ header {
 .links nav a.active,
 .links nav a:hover {
   color: var(--b-green);
-  border-bottom: 0.25rem solid var(--border-color);
-  border-radius: var(--radius-24);
+  border-bottom: 0.3rem solid var(--b-green);
+  border-radius: 0.3rem;
 }
 .header-container .search-icons {
   display: flex;
@@ -656,7 +656,7 @@ section.product {
   overflow: hidden;
   overflow-x: hidden;
 }
-.product .tabs_container {
+.tabs_container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -800,17 +800,17 @@ section.product {
 .product_action,
 .action_btn::after,
 .action_btn::before,
-.product_item:hover .default {
+.product_item:is(:hover, :focus) .default {
   opacity: 0;
 }
-.product_item:hover .product_action,
-.product_item:hover .hover,
-.action_btn:hover::after,
-.action_btn:hover::before {
+.product_item:is(:hover, :focus) .product_action,
+.product_item:is(:hover, :focus) .hover,
+.action_btn:is(:hover, :focus)::after,
+.action_btn:is(:hover, :focus)::before {
   opacity: 1;
 }
-.action_btn:hover::after,
-.action_btn:hover::before {
+.action_btn:is(:hover, :focus)::after,
+.action_btn:is(:hover, :focus)::before {
   transform: translateX(-50%) translateY(-0.5rem);
 }
 .product_item .product_badge {
@@ -1000,6 +1000,9 @@ section.deals {
 }
 /* ================ DEALS SECTION ENDS ============= */
 
+.arrive_desc {
+  margin-top: 1.5rem;
+}
 /* ================ SHOWCASE SECTION STARTS ============= */
 section.showcase {
   /* overflow-x: hidden; */
@@ -1233,7 +1236,6 @@ section.footer {
 }
 .footer .box-container .box .foot-img img {
   border-radius: 0.5rem;
-  /* border: .25rem solid #044a46; */
 }
 .footer .credit {
   padding-top: 4rem;
@@ -1245,3 +1247,44 @@ section.footer {
   font-weight: var(--fw);
 }
 /* ================ FOOTER SECTION ENDS ============= */
+
+/* =========== SHOP STYLES STARTS ============= */
+/* ==========BREADCRUMB SECTION STARTS ============ */
+section.breadcrumb {
+  width: 100%;
+  padding: 0;
+  padding: 0 4.5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: var(--container-color);
+}
+.breadcrumb ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.breadcrumb ul li {
+  list-style: none;
+}
+.breadcrumb ul li a {
+  font-size: var(--fontSize-3);
+  color: var(--black-3);
+  font-weight: var(--weight-bold-700);
+}
+/* ==========BREADCRUMB SECTION STARTS ============ */
+
+.shop .shop_head {
+  margin-bottom: 3rem;
+}
+.shop_head p {
+  font-size: var(--fontSize-3);
+  font-weight: var(--weight-regular-500);
+  font-family: var(--font_family-3);
+  color: var(--text-color);
+  text-transform: none;
+}
+.tab_shop {
+  margin-top: 7rem;
+}
+/* =========== SHOP STYLES STARTS ============= */
