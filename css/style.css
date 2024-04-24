@@ -284,7 +284,7 @@ header {
   border: 0.25rem solid var(--border-color);
 }
 .search .search_img_1 {
-  top: 8.5%;
+  top: 15.5%;
   margin-left: -3rem;
   position: absolute;
 }
@@ -473,7 +473,8 @@ header {
 /* =========== HOME SECTION STARTS ============= */
 section.home {
   width: 100%;
-  padding-top: 10rem;
+  height: 100vh;
+  padding-top: 12rem;
   padding-bottom: 7rem;
   overflow-x: hidden;
 }
