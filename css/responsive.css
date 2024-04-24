@@ -135,7 +135,10 @@
     top: 7%;
   }
   section.home {
-    /* height: 100vh; */
+    overflow-x: hidden;
+    padding-top: 5rem;
+  }
+  section.category {
     overflow-x: hidden;
   }
   .menu_btn,
@@ -218,7 +221,7 @@
   .categories_container .swiper-button-next,
   .categories_container .swiper-button-prev {
     position: absolute;
-    top: 20%;
+    top: 7%;
   }
   .search_img {
     display: block;
