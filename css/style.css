@@ -275,13 +275,13 @@ header {
   height: 4rem;
   padding-left: 1rem;
   border-radius: 0.5rem;
-  border: 0.1rem solid var(--border-color-alt);
+  border: 0.25rem solid var(--border-color-alt);
 }
 .search_2 {
   display: none;
 }
 .search input:focus {
-  border: 0.1rem solid var(--border-color);
+  border: 0.25rem solid var(--border-color);
 }
 .search .search_img_1 {
   top: 8.5%;
@@ -328,7 +328,7 @@ header {
   width: 30%;
   height: 100vh;
   box-shadow: var(--shadow-2);
-  border: 0.1rem solid var(--border-color-alt);
+  border: 0.25rem solid var(--border-color-alt);
   display: block;
   z-index: 10;
   position: fixed;
@@ -361,7 +361,7 @@ header {
 }
 .resp_items .resp_search input {
   width: 100%;
-  border: 0.1rem solid var(--border-color);
+  border: 0.25rem solid var(--border-color);
   height: 4rem;
   border-radius: 0.5rem;
   padding-left: 1rem;
@@ -575,7 +575,7 @@ section.category {
   width: 100%;
   box-shadow: var(--shadow-2);
   padding: 0.625rem 0.625rem 1.25rem;
-  border: 0.1rem solid var(--border-color);
+  border: 0.25rem solid var(--border-color);
   text-align: center;
   overflow: hidden;
 }
@@ -711,7 +711,7 @@ section.product {
   cursor: pointer;
   flex: 1 1 25rem;
   border-radius: 0.5rem;
-  border: 0.1rem solid var(--border-color);
+  border: 0.25rem solid var(--border-color);
   box-shadow: var(--shadow-2);
   position: relative;
   /* overflow-x: hidden; */
@@ -778,7 +778,7 @@ section.product {
 .action_btn::before {
   content: "";
   top: -0.1rem;
-  border: 0.1rem solid transparent;
+  border: 0.25rem solid transparent;
   border-top-color: var(--green);
 }
 .action_btn::after {
@@ -1011,7 +1011,7 @@ section.showcase {
   position: relative;
   width: 100%;
   padding-bottom: 1.5rem;
-  border-bottom: 0.1rem solid var(--border-color);
+  border-bottom: 0.25rem solid var(--border-color);
 }
 .showcase_cover .showcase_head h2 {
   font-size: var(--fontSize-3);
@@ -1050,7 +1050,7 @@ section.showcase {
   flex-wrap: nowrap;
   justify-content: center;
   gap: 2rem;
-  border: 0.1rem solid var(--border-color-alt);
+  border: 0.25rem solid var(--border-color-alt);
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: var(--shadow-2);
@@ -1232,7 +1232,7 @@ section.footer {
 }
 .footer .box-container .box .foot-img img {
   border-radius: 0.5rem;
-  /* border: 0.1rem solid #044a46; */
+  /* border: .25rem solid #044a46; */
 }
 .footer .credit {
   padding-top: 4rem;

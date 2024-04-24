@@ -253,7 +253,7 @@
     right: 3%;
     padding-left: 1rem;
     border-radius: 0.5rem;
-    border: 0.1rem solid var(--border-color-alt);
+    border: 0.25rem solid var(--border-color-alt);
   }
   .search_2.show {
     opacity: 1;
