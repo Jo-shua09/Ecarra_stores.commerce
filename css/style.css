@@ -475,7 +475,8 @@ section.home {
   width: 100%;
   height: 100vh;
   padding-top: 12rem;
-  padding-bottom: 7rem;
+  padding-bottom: 0;
+  /* padding-bottom: 7rem; */
   overflow-x: hidden;
 }
 .home .home-container {
