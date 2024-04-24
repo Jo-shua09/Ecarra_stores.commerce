@@ -784,7 +784,7 @@ section.product {
 }
 .action_btn::after {
   content: attr(aria-label);
-  bottom: 100%;
+  bottom: 50%;
   background-color: var(--b-green);
   color: var(--white);
   font-size: var(--fontSize-1);
@@ -793,8 +793,9 @@ section.product {
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
 }
-.shop .action_btn:after {
-  margin-bottom: 1.5rem;
+.product .action_btn::after,
+.shop .action_btn::after {
+  margin-bottom: 1.7rem;
 }
 .product_item .hover,
 .product_action,
@@ -803,8 +804,8 @@ section.product {
 .product_item:is(:hover, :focus) .default {
   opacity: 0;
 }
-.product_item:is(:hover, :focus) .product_action,
-.product_item:is(:hover, :focus) .hover,
+.product_container:is(:hover, :focus) .product_item .product_action,
+.product_container:is(:hover, :focus) .product_item .hover,
 .action_btn:is(:hover, :focus)::after,
 .action_btn:is(:hover, :focus)::before {
   opacity: 1;
@@ -1191,7 +1192,7 @@ section.footer {
 }
 .footer .box-container .box h3 {
   color: #1a1a1a;
-  font-size: 1.7rem;
+  font-size: var(--fontSize-3);
   padding-bottom: 1.5rem;
   font-weight: var(--weight-bolder);
 }
@@ -1203,7 +1204,7 @@ section.footer {
 }
 .footer .box-container .box p {
   color: #1a1a1a;
-  font-size: 1.2rem;
+  font-size: var(--fontSize-2);
 }
 .footer .box-container .box p span {
   color: #1a1a1a;
@@ -1213,13 +1214,13 @@ section.footer {
   padding-top: 2.5rem;
 }
 .footer .box-container .box .follow i {
-  font-size: 1rem;
+  font-size: var(--fontSize-2);
   padding-right: 0.5rem;
 }
 .footer .box-container .box:nth-child(2) a,
 .footer .box-container .box:nth-child(3) a {
   display: block;
-  font-size: 1.2rem;
+  font-size: var(--fontSize-2);
   padding-bottom: 1.5rem;
   color: #465b52;
   width: 45%;
@@ -1287,4 +1288,7 @@ section.breadcrumb {
 .tab_shop {
   margin-top: 7rem;
 }
-/* =========== SHOP STYLES STARTS ============= */
+/* =========== SHOP STYLES ENDS ============= */
+
+/* ============= ACCOUNT STYLES STARTS================= */
+/* ============= ACCOUNT STYLES ENDS ================ */

@@ -269,4 +269,8 @@
   .home_img {
     margin-top: 5rem;
   }
+  .footer .credit {
+    padding-top: 4rem;
+    padding-bottom: 9rem;
+  }
 }
