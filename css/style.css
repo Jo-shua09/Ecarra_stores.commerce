@@ -1652,15 +1652,15 @@ input:focus {
   transition-delay: 200ms;
 }
 .fade-up.fade-up-active:nth-child(2) {
-  transition-delay: 350ms;
+  transition-delay: 300ms;
 }
 .fade-up.fade-up-active:nth-child(3) {
-  transition-delay: 450ms;
+  transition-delay: 400ms;
 }
 .fade-up.fade-up-active:nth-child(4) {
-  transition-delay: 550ms;
+  transition-delay: 500ms;
 }
 .fade-up.fade-up-active:nth-child(5) {
-  transition-delay: 650ms;
+  transition-delay: 600ms;
 }
 /* FADE IN ANIMATION */
