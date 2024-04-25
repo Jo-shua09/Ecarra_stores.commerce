@@ -218,6 +218,30 @@
   .product_container {
     flex: 1 1 20rem;
   }
+  .arrive_container,
+  .product_container {
+    /* width: 100%; */
+    width: max-content;
+    flex: 1 1 25rem;
+  }
+  .arrive_container .product_item a img,
+  .product_container .product_item a img {
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+  }
+  .product_item .product_action {
+    gap: 1.5rem;
+  }
+  .product_desc .action_btn i,
+  .product_action .action_btn i {
+    font-size: var(--fontSize-6);
+  }
+  .related .action_btn::after,
+  .product .action_btn::after,
+  .shop .action_btn::after {
+    margin-bottom: 2.5rem;
+  }
   .arive_container .swiper-button-prev,
   .categories_container .swiper-button-prev {
     left: initial;

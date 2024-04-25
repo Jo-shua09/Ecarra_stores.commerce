@@ -1291,7 +1291,7 @@ section.breadcrumb {
 }
 /* =========== SHOP STYLES ENDS ============= */
 
-/* ============= ACCOUNT STYLES STARTS================= */
+/* ============= PRODUCT DETAILS STYLES STARTS================= */
 /* ============= PRODUCT DETAILS SECTION STARTS ============= */
 .product_details .product_general_container {
   width: 100%;
@@ -1637,4 +1637,30 @@ input:focus {
 }
 /* ============= PRODUCT REVIEW SECTION ENDS ============= */
 
-/* ============= ACCOUNT STYLES ENDS ================ */
+/* ============= PRODUCT DETAILS STYLES ENDS ================ */
+
+/* FADE IN ANIMATION */
+.fade-up {
+  opacity: 0;
+  transform: translateX(-150px);
+}
+.fade-up.fade-up-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.fade-up.fade-up-active:nth-child(1) {
+  transition-delay: 200ms;
+}
+.fade-up.fade-up-active:nth-child(2) {
+  transition-delay: 350ms;
+}
+.fade-up.fade-up-active:nth-child(3) {
+  transition-delay: 450ms;
+}
+.fade-up.fade-up-active:nth-child(4) {
+  transition-delay: 550ms;
+}
+.fade-up.fade-up-active:nth-child(5) {
+  transition-delay: 650ms;
+}
+/* FADE IN ANIMATION */
