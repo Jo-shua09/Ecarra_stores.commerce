@@ -1446,7 +1446,7 @@ section.breadcrumb {
   height: 4.5rem;
 }
 .qty_submit input {
-  height: 4.5rem;
+  /* height: 4.5rem; */
   /* width: 10rem; */
   cursor: pointer;
   padding: 1.3rem 2.2rem;
@@ -1472,27 +1472,18 @@ section.breadcrumb {
 /* ============= PRODUCT DETAILS SECTION ENDS ============= */
 
 /* ============= PRODUCT REVIEW SECTION STARTS ============= */
-.reviews .reviews_container {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  border: 0.1rem solid var(--border-color-alt);
+.reviews_container table {
   width: 100%;
   border-radius: 0.5rem;
-  flex: 1 1 45rem;
+  /* border-collapse: collapse; */
+  border: 0.1rem solid var(--border-color-alt);
 }
-.tab_rev_info {
-  justify-content: start;
-  margin-bottom: 3rem;
+.reviews_container tr th,
+.reviews_container tr td {
+  border: 0.1rem solid var(--border-color-alt);
+  padding: 0.5rem 1.3rem;
 }
-.reviews_container .box {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  border-left: 0.1rem solid var(--border-color-alt);
-}
-.reviews_container .box h3 {
+.reviews_container tr th {
   padding: 0 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1500,9 +1491,9 @@ section.breadcrumb {
   font-weight: var(--weight-bold-700);
   color: var(--black-3);
   font-family: var(--font_family-3);
-  border-bottom: 0.1rem solid var(--border-color-alt);
+  text-align: left;
 }
-.reviews_container .box p {
+.reviews_container tr td {
   padding: 0 2rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
@@ -1510,7 +1501,11 @@ section.breadcrumb {
   font-weight: var(--weight-regular-500);
   color: var(--text-color);
   font-family: var(--font_family-3);
-  border-bottom: 0.1rem solid var(--border-color-alt);
+  text-align: left;
+}
+.tab_rev_info {
+  justify-content: start;
+  margin-bottom: 3rem;
 }
 .info_container {
   margin-top: 4rem;
@@ -1623,7 +1618,7 @@ input:focus {
   border: 0.2rem solid var(--b-green) !important;
 }
 .submit_review input {
-  height: 4.5rem;
+  /* height: 4.5rem; */
   /* width: 10rem; */
   cursor: pointer;
   padding: 1.3rem 2.2rem;
