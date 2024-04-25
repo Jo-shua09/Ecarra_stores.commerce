@@ -207,3 +207,23 @@ function removeClasses() {
 
 // Add scroll event listener to window
 window.addEventListener("scroll", removeClasses);
+
+// ============== IMAGE GALLERY SETTINGS ===============
+const largeImg = document.querySelector(".large_img");
+const smallImg = document.querySelectorAll(".small_img");
+
+smallImg[0].onclick = function () {
+  largeImg.src = smallImg[0].src;
+};
+smallImg[1].onclick = function () {
+  largeImg.src = smallImg[1].src;
+};
+smallImg[2].onclick = function () {
+  largeImg.src = smallImg[2].src;
+};
+smallImg[3].onclick = function () {
+  largeImg.src = smallImg[3].src;
+};
+smallImg[4].onclick = function () {
+  largeImg.src = smallImg[4].src;
+};
