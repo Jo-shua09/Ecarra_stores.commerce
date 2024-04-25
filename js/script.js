@@ -227,3 +227,5 @@ smallImg[3].onclick = function () {
 smallImg[4].onclick = function () {
   largeImg.src = smallImg[4].src;
 };
+
+// ============== FADE IN ANIMATION SETTINGS ==============

@@ -283,4 +283,7 @@
     padding-top: 4rem;
     padding-bottom: 9rem;
   }
+  .small_img {
+    width: 12rem;
+  }
 }
