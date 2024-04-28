@@ -1944,7 +1944,7 @@ input[type="checkbox"]:checked::after {
 .tab_content .body p {
   font-size: var(--fontSize-3);
   font-weight: var(--weight-regular-500);
-  font-family: var(--font_family-2);
+  font-family: var(--font_family-3);
   text-transform: none;
   color: var(--text-color);
   line-height: var(--lineHeight-3);
