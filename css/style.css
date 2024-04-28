@@ -180,7 +180,7 @@ header {
 .top-header {
   background-color: var(--green);
   border-bottom: 0.15rem solid var(--b-green);
-  padding: 1rem 4.5%;
+  padding: 1.5rem 4.5%;
   width: 100%;
   overflow-x: hidden;
 }
@@ -299,7 +299,7 @@ header {
 .search-icons .img-heart .count,
 .search-icons .img-cart .count {
   position: absolute;
-  top: 8%;
+  top: 9%;
   background-color: var(--b-green);
   color: var(--white);
   margin-left: 1rem;
@@ -520,7 +520,7 @@ section.home {
   margin-top: 3rem;
 }
 .btn a {
-  padding: 1.3rem 2.2rem;
+  padding: 1.2rem 2.5rem;
   border-top: 0.3rem solid var(--b-green);
   border-bottom: 0.3rem solid var(--b-green);
   color: var(--black-3);
@@ -1150,15 +1150,20 @@ section.newsletter {
   border: 0.2rem solid var(--border-color);
 }
 .newsletter_container .news_box .submit {
-  width: 10%;
   position: absolute;
-  right: 5%;
-  padding: 1.3rem 2.2rem;
+  top: 0;
+  bottom: 0;
+  left: 80%;
+  padding: 1.3rem 2.5rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
   border-top: 0.3rem solid var(--b-green);
   border-bottom: 0.3rem solid var(--b-green);
   color: var(--black-3);
   background-color: var(--green-alt);
-  font-size: var(--fontSize-3);
+  font-size: var(--fontSize-2);
   font-weight: var(--weight-bold-700);
   border-radius: 0.5rem;
   cursor: pointer;
@@ -1166,7 +1171,6 @@ section.newsletter {
 .newsletter_container .news_box .submit:hover {
   color: var(--white);
   background-color: var(--b-green);
-  letter-spacing: var(--letterSpacing-1);
 }
 /* ================ NEWSLETTER SECTION ENDS ============= */
 
@@ -1182,10 +1186,10 @@ section.footer {
   overflow-x: hidden;
 }
 .footer .box-container .box {
-  flex: 1 1 25rem;
+  flex: 1 1 20rem;
 }
 .footer .box-container .box_1 {
-  flex: 1 1 30rem;
+  flex: 1 1 45rem;
 }
 .footer .box-container .box:nth-child(1) img {
   padding-bottom: 1.5rem;
@@ -1664,3 +1668,343 @@ input:focus {
   transition-delay: 600ms;
 }
 /* FADE IN ANIMATION */
+
+/* ========== CART SECTION STARTS ============= */
+
+/* ========== CART SECTION ENDS ============= */
+
+/* ========= LOGIN / CREAT ACCOUNT SECTION STARTS ======== */
+.signIn {
+  padding: 5rem 0;
+  /* padding: 15rem 0; */
+  padding-bottom: 5rem;
+  text-align: center;
+  width: 100%;
+}
+.signIn-head {
+  margin-bottom: 3rem;
+}
+.signIn-head h3 {
+  text-transform: none;
+  font-weight: var(--weight-bold-700);
+  font-size: var(--fontSize-6);
+  padding-bottom: 1rem;
+  color: var(--text-color);
+}
+.signIn-head p {
+  text-transform: none;
+  font-weight: var(--weight-regular-500);
+  font-size: var(--fontSize-2);
+}
+.signIn-head p a {
+  text-transform: none;
+  color: var(--text-color);
+  text-decoration: underline;
+}
+.signIn-head p a:hover {
+  text-decoration: none;
+}
+.signIn_form {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 3rem;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.signIn_form form label {
+  font-size: var(--fontSize-2);
+  font-weight: var(--weight-regular-500);
+  text-align: left;
+  text-transform: none;
+  float: left;
+  padding-bottom: 0.5rem;
+}
+.signIn_form form input {
+  display: block;
+  width: 100%;
+  height: 4.5rem;
+  padding-left: 1rem;
+  color: var(--text-color);
+  color: RGB(75, 85, 99);
+  font-size: var(--fontSize-2);
+  font-weight: var(--weight-regular-500);
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+.rem_for {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin: 2rem 0;
+  align-items: center;
+  text-align: center;
+}
+input[type="checkbox"] {
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid var(--b-green);
+  border-radius: 0.2rem;
+}
+input[type="checkbox"]:after {
+  position: absolute;
+  content: "";
+  top: 20%;
+  left: 20%;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--white);
+  opacity: 0;
+}
+input[type="checkbox"]:checked {
+  background-color: var(--b-green);
+}
+input[type="checkbox"]:checked::after {
+  opacity: 1;
+}
+.rem_for .remember label {
+  font-size: var(--fontSize-2);
+  padding-left: 0.3rem;
+  font-weight: normal;
+  text-transform: none;
+}
+.rem_for .forgot a:hover {
+  text-decoration: none;
+}
+.forgot-2 {
+  text-align: center;
+  margin: 2rem 0;
+  justify-content: center;
+}
+.forgot-2 a,
+.rem_for .forgot a {
+  font-size: var(--fontSize-2);
+  padding-left: 0.3rem;
+  font-weight: var(--weight-regular-500);
+  color: var(--text-color);
+  text-decoration: underline;
+  text-transform: none;
+}
+.forgot-2 a {
+  text-decoration: none;
+}
+.forgot-2 a:hover {
+  text-decoration: underline;
+}
+.signIn_form .signIn_btn input {
+  padding: 1.3rem 2.2rem;
+  border-top: 0.3rem solid var(--b-green);
+  border-bottom: 0.3rem solid var(--b-green);
+  color: var(--black-3);
+  background-color: var(--green-alt);
+  font-size: var(--fontSize-3);
+  font-weight: var(--weight-regular-500);
+  border-radius: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+}
+.signIn_form .signIn_btn input:hover {
+  color: var(--white);
+  background-color: var(--b-green);
+  letter-spacing: var(--letterSpacing-1);
+}
+
+.btn a:hover {
+  color: var(--white);
+  background-color: var(--b-green);
+  letter-spacing: var(--letterSpacing-1);
+}
+.signIn_form .options {
+  margin: 3rem 0;
+}
+.signIn_form .options p {
+  margin-bottom: 3rem;
+  font-size: var(--fontSize-2);
+  position: relative;
+  text-transform: none;
+}
+.signIn_form .options p::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 32%;
+  height: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.signIn_form .options p::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0;
+  width: 32%;
+  height: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.signIn_form .options .opt {
+  display: flex;
+  margin-top: 1rem;
+  text-align: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.signIn_form .options .opt a {
+  width: 100%;
+  color: var(--text-color);
+  font-size: var(--fontSize-4);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+.signIn_form .options .opt a:hover {
+  background-color: var(--b-green);
+  color: var(--white);
+}
+/* ========= LOGIN / CREAT ACCOUNT SECTION ENDS ======== */
+
+/* ========== ACCOUNT SECTION STARTS ============= */
+.account {
+  width: 100%;
+}
+.account .account_container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+}
+.tab_content:not(.active_tab) {
+  display: none;
+}
+.account_container .box_tab {
+  flex: 1 1 10rem;
+  width: 100%;
+  border: 0.1rem solid var(--container-color);
+  border-radius: 0.5rem;
+}
+.account_container .box_content {
+  flex: 1 1 45rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--container-color);
+}
+.box_tab .account_tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.account_tabs .account_tab {
+  font-size: var(--fontSize-3);
+  font-weight: var(--weight-bold-700);
+  font-family: var(--font_family-3);
+  color: var(--text-color);
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 0.8rem;
+  border-bottom: 0.1rem solid var(--container-color);
+  padding: 1.5rem;
+  cursor: pointer;
+}
+.account_tabs .account_tab:nth-child(6) {
+  border-bottom: none;
+}
+.account_tab.active_tab,
+.account_tabs .account_tab:hover {
+  background-color: var(--b-green);
+  color: var(--white);
+}
+.box_content .tab_contents {
+  width: 100%;
+}
+.tab_contents .tab_content {
+  width: 100%;
+}
+.tab_content h3 {
+  background-color: var(--border-color-alt);
+  color: var(--text-color);
+  padding: 1.5rem;
+  font-size: var(--fontSize-3);
+  font-weight: var(--weight-bold-700);
+  font-family: var(--font_family-3);
+}
+.tab_content .body {
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+}
+.tab_content .body p {
+  font-size: var(--fontSize-3);
+  font-weight: var(--weight-regular-500);
+  font-family: var(--font_family-2);
+  text-transform: none;
+  color: var(--text-color);
+  line-height: var(--lineHeight-3);
+}
+.tab_content .orders {
+  width: 100%;
+}
+.orders .order_list {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  border-collapse: collapse;
+}
+.orders tr th {
+  text-align: left;
+  gap: 5rem;
+}
+.orders tr th {
+  font-weight: var(--weight-bolder);
+}
+.orders tr th,
+.orders tr td {
+  border: 0.1rem solid var(--border-color-alt);
+  padding: 1rem;
+  font-family: var(--font_family-3);
+  font-size: var(--fontSize-2);
+  color: var(--text-color);
+}
+.tab_content .location_address a:hover,
+.orders a:hover {
+  text-decoration: underline;
+}
+.body input {
+  border: 0.2rem solid var(--border-color);
+  width: 100%;
+  height: 4.5rem;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  font-size: var(--fontSize-2);
+  font-family: var(--font_family-3);
+  margin-bottom: 1rem;
+}
+.body .address {
+  font-size: var(--fontSize-3);
+  font-weight: var(--weight-regular-500);
+  font-family: var(--font_family-3);
+  line-height: var(--lineHeight-3);
+  color: var(--text-color);
+  padding-bottom: 0;
+}
+.tab_content .location_address p {
+  font-size: var(--fontSize-3);
+  text-transform: none;
+  padding-bottom: 1rem;
+  font-weight: var(--weight-regular-500);
+  font-family: var(--fontSize-3);
+}
+.tab_content .location_address a {
+  font-size: var(--fontSize-2);
+}
+/* ========== ACCOUNT SECTION ENDS ============= */
