@@ -73,12 +73,9 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("fade-up-active");
-    } else {
-      entry.target.classList.remove("fade-up-active");
     }
   });
 });
-
 const fadeUP = document.querySelectorAll(".fade-up");
 fadeUP.forEach((el) => observer.observe(el));
 
