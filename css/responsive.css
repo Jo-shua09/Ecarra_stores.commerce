@@ -341,7 +341,11 @@
   .cart-box i {
     margin-left: 5rem;
   }
+
   .product_container a.addBtn {
     font-size: var(--fontSize-13);
+  }
+  .arrive_container a.addBtn {
+    font-size: var(--fontSize-3);
   }
 }
