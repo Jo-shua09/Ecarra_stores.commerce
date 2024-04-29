@@ -101,12 +101,15 @@ function handle_openCart() {
     menuIcon.classList.remove("fa-times");
   });
   searchIcons.forEach((searchIcon) => {
-    searchIcon.classList.toggle("hide");
+    searchIcon.classList.add("hide");
   });
 }
 cartClose.onclick = function () {
   cartItems.classList.remove("showCart");
-  navBar.classList.remove("show");
+
+  searchIcons.forEach((searchIcon) => {
+    searchIcon.classList.remove("hide");
+  });
 };
 
 //================ ADD ITEMS TO CART/ ALL CART SETTINGS ==================

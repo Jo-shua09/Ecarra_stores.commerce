@@ -219,7 +219,6 @@
   }
   section.home {
     padding-top: 8rem;
-    /* padding-bottom: 12rem; */
     overflow-x: hidden;
   }
   .home_img img {
@@ -341,5 +340,8 @@
   }
   .cart-box i {
     margin-left: 5rem;
+  }
+  .product_container a.addBtn {
+    font-size: var(--fontSize-13);
   }
 }

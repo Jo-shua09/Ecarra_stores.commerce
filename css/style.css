@@ -631,17 +631,16 @@ section.product {
 }
 .tabs_container .tab_btn {
   padding: 1.2rem 2.2rem;
-  font-size: var(--fontSize-3);
+  font-size: var(--fontSize-2);
+  font-family: var(--font_family-3);
   font-weight: var(--weight-bold-700);
-  color: var(--black-3);
+  color: var(--text-color);
   border-radius: 0.5rem;
-  background-color: var(--container-color);
   cursor: pointer;
 }
-.tabs_container .tab_btn:hover,
-.tabs_container .tab_btn.active_tab {
-  background-color: var(--green-alt);
-  color: var(--b-green);
+.tabs_container .tab_btn.active_tab,
+.tabs_container .tab_btn:hover {
+  box-shadow: inset var(--shadow-3);
 }
 .tab_items {
   margin-top: 4rem;
@@ -710,6 +709,7 @@ section.product {
   position: absolute;
   bottom: 4%;
   right: 1.5rem;
+  font-size: var(--fontSize-7);
 }
 .product_container a.addBtn,
 .product_action .action_btn i {
@@ -849,6 +849,7 @@ section.product {
   text-decoration: line-through;
   font-size: var(--fontSize-1);
   padding-left: 0.5rem;
+  align-items: center;
   color: var(--text-color);
 }
 /* ============ PRODUCTS SECTION ENDS ============= */
@@ -1334,7 +1335,10 @@ section.breadcrumb {
   color: var(--b-green);
   font-weight: var(--weight-bold-700);
 }
-.price span:nth-child(3),
+.price span:nth-child(3) {
+  font-size: var(--fontSize-2);
+  color: var(--text-color);
+}
 .price span:nth-child(2) {
   font-size: var(--fontSize-2);
   color: var(--text-color);
@@ -1613,19 +1617,19 @@ input:focus {
   transform: translateX(0);
 }
 .fade-up.fade-up-active:nth-child(1) {
-  transition-delay: 200ms;
+  transition-delay: 50ms;
 }
 .fade-up.fade-up-active:nth-child(2) {
-  transition-delay: 300ms;
+  transition-delay: 100ms;
 }
 .fade-up.fade-up-active:nth-child(3) {
-  transition-delay: 400ms;
+  transition-delay: 150ms;
 }
 .fade-up.fade-up-active:nth-child(4) {
-  transition-delay: 500ms;
+  transition-delay: 200ms;
 }
 .fade-up.fade-up-active:nth-child(5) {
-  transition-delay: 600ms;
+  transition-delay: 250ms;
 }
 /* FADE IN ANIMATION */
 
@@ -1633,7 +1637,6 @@ input:focus {
 section.cart {
   transform-origin: left;
   position: fixed;
-  padding-bottom: 50rem;
   top: 0%;
   right: 0;
   width: 30%;
@@ -1752,6 +1755,9 @@ section.cart {
 }
 .remove-items:hover {
   transform: scale(1.2);
+}
+.summary_items {
+  padding-bottom: 15rem;
 }
 .item-summary {
   border: 0.1rem solid var(--border-color);
