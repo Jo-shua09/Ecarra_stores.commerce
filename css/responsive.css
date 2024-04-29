@@ -12,27 +12,6 @@
   --border-color: hsl(129, 36%, 85%);
   --border-color-alt: hsl(113, 15%, 90%);
 
-  /* --silver: hsla(0, 0%, 65%, 1);
-  --grey: hsla(30, 3%, 34%, 1);
-  --black: hsla(0, 0%, 0%, 1);
-  --black-1: hsla(40, 12%, 5%, 1);
-  --black-2: hsla(30, 8%, 5%, 1);
-  --black-3: hsla(0, 3%, 7%, 1);
-  --black-4: hsla(210, 4%, 9%, 1);
-  --black-5: hsla(210, 4%, 11%, 1);
-  --black-6: hsla(180, 2%, 8%, 1);
-  --black-7: hsla(0, 0%, 13%, 1);
-  --black-8: hsla(0, 0%, 0%, 0.8);
-  --black-9: hsla(0, 0%, 0%, 0.15);
-  --green: #2ecc40;
-  --white: hsla(0, 0%, 100%, 1);
-  --white-1: hsla(0, 0%, 100%, 0.2);
-  --white-2: hsla(0, 0%, 100%, 0.1);
-  --t-green: #2ecc40;
-  --t-black-1: hsla(40, 12%, 5%, 1);
-  --t-silver: hsla(0, 0%, 65%, 1);
-  --t-white: hsla(0, 0%, 100%, 1); */
-
   /* FONT FAMILY */
   --font_family-1: "lato", sans-serif;
   --font_family-2: "Playfair Display", serif;
@@ -106,6 +85,9 @@
 @media (max-width: 991px) {
   html {
     font-size: 55%;
+  }
+  section.cart {
+    width: 45%;
   }
 }
 
@@ -207,6 +189,9 @@
     flex: 1 1 45rem;
     width: 100%;
   }
+  section.cart {
+    width: 55%;
+  }
 }
 
 @media (max-width: 550px) {
@@ -219,6 +204,12 @@
     bottom: 0;
     left: 75%;
     padding: 1.3rem 2.2rem;
+  }
+  .responsive_bar {
+    width: 60%;
+  }
+  section.cart {
+    width: 80%;
   }
 }
 
@@ -340,6 +331,15 @@
     width: 12rem;
   }
   .signIn_form {
-    width: 90%;
+    width: 95%;
+  }
+  section.cart {
+    width: 100%;
+  }
+  .cart-box {
+    gap: 5rem;
+  }
+  .cart-box i {
+    margin-left: 5rem;
   }
 }

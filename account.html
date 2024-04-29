@@ -118,7 +118,7 @@
             </div>
 
             <div class="img-cart">
-              <img src="/img/icon-cart.svg" alt="" />
+              <img src="/img/icon-cart.svg" alt="" id="cart-icon" />
               <div class="count">0</div>
             </div>
           </div>
@@ -149,7 +149,7 @@
           </div>
 
           <div class="resp_icon">
-            <img src="/img/icon-cart.svg" alt="" />
+            <img src="/img/icon-cart.svg" id="cart-icon" alt="" />
             <div class="count">0</div>
           </div>
         </div>
@@ -205,7 +205,7 @@
     <!-- =========== ACCOUNT SECTION STARTS ================ -->
     <section class="account" id="account">
       <div class="account_container">
-        <div class="box box_tab">
+        <div class="box box_tab fade-up">
           <div class="account_tabs">
             <div class="account_tab active_tab" data-target="#dashboard">
               <i class="fi fi-ss-settings-sliders"></i> dashboard
@@ -228,9 +228,9 @@
           </div>
         </div>
 
-        <div class="box box_content">
+        <div class="box box_content fade-up">
           <div class="tab_contents">
-            <div class="tab_content active_tab" content id="dashboard">
+            <div class="tab_content fade-up active_tab" content id="dashboard">
               <h3>hello joshua!</h3>
 
               <div class="body">
@@ -242,7 +242,7 @@
               </div>
             </div>
 
-            <div class="tab_content" content id="orders">
+            <div class="tab_content fade-up" content id="orders">
               <h3>your orders</h3>
               <div class="orders body">
                 <table class="order_list">
@@ -280,7 +280,7 @@
               </div>
             </div>
 
-            <div class="tab_content" content id="profile">
+            <div class="tab_content fade-up" content id="profile">
               <h3>update profile</h3>
               <div class="body">
                 <form action="">
@@ -292,7 +292,7 @@
               </div>
             </div>
 
-            <div class="tab_content" content id="address">
+            <div class="tab_content fade-up" content id="address">
               <h3>shipping address</h3>
               <div class="body">
                 <address class="address">
@@ -308,7 +308,7 @@
               </div>
             </div>
 
-            <div class="tab_content" content id="password">
+            <div class="tab_content fade-up" content id="password">
               <h3>change password</h3>
               <div class="body">
                 <input
@@ -341,6 +341,69 @@
       </div>
     </section>
     <!-- =========== ACCOUNT SECTION ENDS ================ -->
+
+    <!-- CART DISPLAY SECTION -->
+    <section class="scrollbar-y cart" id="cart-items">
+      <div class="cart-title">
+        <h2>your cart</h2>
+        <i class="fas fa-times" id="close-cart"></i>
+      </div>
+      <div class="cart-content" id="cartContent">
+        <!-- <div class="cart-box">
+          <img src="products-img/p1.jpg" alt="" class="cart-img" />
+          <div class="detail-box">
+            <div class="cart-product-title">fashion t-shirt</div>
+            <div class="cart-price">$100.00</div>
+            <div class="cart-size">
+              <select name="size" id="select">
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+                <option value="extra large">XL</option>
+                <option value="extrra extra">XXL</option>
+              </select>
+            </div>
+            <input type="number" value="1" class="cart-quantity" />
+          </div>
+          <i class="fas fa-trash remove-items"></i>
+        </div> -->
+      </div>
+
+      <div class="item-summary">
+        <div class="top">
+          <div class="summary">
+            <h2>items summary</h2>
+          </div>
+          <div class="details">
+            <h2 id="itemB">item(s)</h2>
+            <h2 class="totalA">$0</h2>
+          </div>
+          <div class="coupon">
+            <h2>shipping</h2>
+            <select name="delivery" id="select-del">
+              <option value="dd">door delivery</option>
+              <option value="ps">pickUp station</option>
+              <option value="md">merchant delivery</option>
+            </select>
+            <h2>promo code</h2>
+            <input
+              type="text"
+              placeholder="enter your promo code"
+              id="promoCode"
+            />
+            <button class="promo-btn">apply</button>
+          </div>
+          <div class="total">
+            <h2>total</h2>
+            <h2 class="totalB">$0</h2>
+          </div>
+          <div class="checkout">
+            <button class="checkOut">check out</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CART DISPLAY SECTION -->
 
     <!-- ============== NEWSLETTER SECTION STARTS ================= -->
     <section class="newsletter" id="newsletter">
