@@ -624,7 +624,7 @@ section.product {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 0.5rem;
   width: 100%;
   overflow: hidden;
   overflow-x: hidden;
@@ -670,8 +670,8 @@ section.product {
   cursor: pointer;
   flex: 1 1 25rem;
   border-radius: 0.5rem;
-  border: 0.25rem solid var(--border-color);
-  box-shadow: var(--shadow-2);
+  /* border: 0.25rem solid var(--border-color); */
+  box-shadow: var(--shadow-3);
   position: relative;
 }
 .arrive_container .product_item,
