@@ -1,3 +1,11 @@
+const loader = document.querySelector(".loader_container");
+loader.addEventListener("load", () => {
+  loader.classList.add("fade-out");
+});
+window.onload = function () {
+  loader.classList.add("fade-out");
+};
+
 window.onscroll = function () {
   navBar.classList.remove("show");
   menuButton.classList.remove("fa-times");
